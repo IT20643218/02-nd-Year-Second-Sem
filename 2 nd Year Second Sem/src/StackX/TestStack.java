@@ -1,20 +1,23 @@
 package StackX;
 
+import java.util.Scanner;
+
 public class TestStack {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		StackX theStack = new StackX(5);
-		theStack.push('A');
-		theStack.push('B');
-		theStack.push('C');
-		theStack.push('D');
 		
-		while(!theStack.isEmpty())
-		{
-			char val = theStack.pop();
-			System.out.println(val);
-			System.out.println("  ");
-		}
+		
+		String input;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter String Containig Delemeters enter empty value for break");
+		System.out.flush();
+		//Read String from key board
+		input = scan.nextLine();
+		
+		//Make a BracketChecker object
+		BracketChecker thechecker =new BracketChecker(input);
+		thechecker.check();
 	}
+
 }

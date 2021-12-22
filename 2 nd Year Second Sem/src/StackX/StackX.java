@@ -18,10 +18,12 @@ public class StackX {
 	{
 	
 	if(top == (maxsize -1))
-		System.out.println("Stack is full")
-	else{
+		System.out.println("Stack is full");
+	else
+	{
 		stackArray[++top]=j;
 	}
+}
 
 	//to remove an item from stack
 	public char pop()
@@ -42,6 +44,7 @@ public class StackX {
 			return true;
 		else
 			return false;
+	}
 	
 	//check whether stack is full
 	public boolean isFull()
