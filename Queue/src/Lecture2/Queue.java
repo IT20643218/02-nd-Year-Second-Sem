@@ -24,4 +24,35 @@ public class Queue {
 			nItems++;
 		}
 	}
+
+
+//Remove
+public int remove()
+{
+		if(nItems==0)
+		{
+			System.out.println("Queue is empty");
+			return -99;
+		}
+		else
+		{
+			nItems--;
+			return queArray[front++];
+		}
+	}
+
+
+//Peekfront
+public int peekFront()
+{
+	if(nItems==0)
+	{
+		System.out.println("Queue is emplty");
+		return -99;
+	}
+	else
+		
+		return queArray[front];
+	}
 }
+
