@@ -11,7 +11,7 @@ public class StackX {
 		return false;
 	}
 
-	public int pop() {
+	public double pop() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
