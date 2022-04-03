@@ -13,6 +13,9 @@ public class LinkMain {
 			
 		
 		//linklist.deleteFirst();
+		//linklist.displayList();
+		
+		//linklist.deleteLink("Aravinda");
 		linklist.displayList();
 	}
 

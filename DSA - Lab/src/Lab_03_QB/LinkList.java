@@ -28,6 +28,25 @@ public class LinkList {
 		return temp;
 	}
 	
+	public Link deleteLink(String name) {
+		Link current = first;
+		Link previous = first;
+		
+		while(current.name != name) {
+			if(current.next == null)
+				return null;
+				else {
+					previous = current;
+					current = current.next;
+				}
+		}
+		if(current == first)
+			first = first.next;
+		else
+			previous.next = current.next;
+			return current;
+	}
+	
 	public void displayList() {
 		System.out.println("List from first link to the first link");
 		Link current = first;
