@@ -144,7 +144,7 @@ public class Tree {
 			
 			if (current == null)
 			{
-				System.out.println("current.name");
+				System.out.println("Value is not in the tree");
 				return current;
 			}
 		}//found the value

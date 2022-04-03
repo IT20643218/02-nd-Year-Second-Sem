@@ -1,5 +1,7 @@
 package Lab4_4;
 
+import java.util.Scanner;
+
 public class mainApp {
 
 	public static void main(String[] args) {
@@ -17,7 +19,25 @@ public class mainApp {
 		T1.insert(105,"Bimali");
 		T1.insert(133,"Sampath");
 		
-		System.out.println("Inorder (left ,root,");
+		/*System.out.println("Inorder (left ,root,");
+		T1.TraverseinOrde();
+		
+		System.out.println("Preorder (root,left,right");
+		T1.TraverseinOrde();
+		
+		System.out.println("Postorder (root,left,root");
+		T1.TraverseinOrde();
+		
+		System.out.println("Input the value :");
+		Scanner sc = new Scanner(System.in);
+		
+		int value;
+		value = sc.nextInt();
+		
+		//T1.callRecrusive(value);
+		T1.find(value);*/
+		
+		//T1.deleteAll();
 		T1.TraverseinOrde();
 	}
 
